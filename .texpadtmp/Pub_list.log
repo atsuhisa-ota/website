@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.7.8)  9 NOV 2018 15:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.7.8)  28 NOV 2018 10:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -78,8 +78,7 @@ File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 \c@EM@itemctr=\count92
 \c@EM@etaremunectr=\count93
-)
-No file Pub_list.aux.
+) (/Users/atsuhisaota/Dropbox/Webpage/Atsuhisa_Ota/.texpadtmp/Pub_list.aux)
 \openout1 = `Pub_list.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
@@ -94,6 +93,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
 LaTeX Font Info:    ... okay on input line 34.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
 LaTeX Font Info:    ... okay on input line 34.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -142,35 +142,31 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 [1
 
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (1.914pt too wide) in paragraph at lines 203--204
+Overfull \hbox (1.914pt too wide) in paragraph at lines 205--206
 []\OT1/cmr/m/n/10.95 ``Late time evo-lu-tion of isocur-va-ture per-tur-ba-tions at sec-ond or-der'', Padova Uni-ver-sity, 05/2018 
  []
 
 [2]
-Overfull \hbox (8.4231pt too wide) in paragraph at lines 250--251
+Overfull \hbox (8.4231pt too wide) in paragraph at lines 252--253
 []\OT1/cmr/m/n/10.95 Research Fel-low of the Japan So-ci-ety for the Pro-mo-tion of Sci-ence (PD), 01/04/2017 - 31/03/2018 
  []
 
 
-Overfull \hbox (13.36336pt too wide) in paragraph at lines 263--266
+Overfull \hbox (13.36336pt too wide) in paragraph at lines 265--268
 []\OT1/cmr/m/n/10.95 Grant-in-Aid for JSPS Fel-lows, Project/Area Num-ber: 16J03220, Project Pe-riod (FY) 22/04/2016
  []
 
-
-LaTeX Warning: Etaremune labels have changed.
-               Rerun to get them right.
-
 [3] (/Users/atsuhisaota/Dropbox/Webpage/Atsuhisa_Ota/.texpadtmp/Pub_list.aux) ) 
 Here is how much of TeX's memory you used:
- 1229 strings out of 492646
- 17602 string characters out of 6129564
- 89479 words of memory out of 5000000
+ 1231 strings out of 492646
+ 17744 string characters out of 6129564
+ 89505 words of memory out of 5000000
  5141 multiletter control sequences out of 15000+600000
  7807 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 27i,4n,29p,310b,272s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,4n,29p,310b,274s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on /Users/atsuhisaota/Dropbox/Webpage/Atsuhisa_Ota/.texpadtmp/Pub_list.pdf (3 pages, 93378 bytes).
+Output written on /Users/atsuhisaota/Dropbox/Webpage/Atsuhisa_Ota/.texpadtmp/Pub_list.pdf (3 pages, 93423 bytes).
 PDF statistics:
  38 PDF objects out of 1000 (max. 8388607)
  26 compressed objects within 1 object stream
