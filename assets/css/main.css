@@ -1586,7 +1586,7 @@
 
 	body, input, select, textarea {
 		color: #9a9a9a;
-		font-family: "Raleway", Arial, Helvetica, sans-serif;
+		font-family: "Georgia", Arial, Helvetica, sans-serif;
 		font-size: 13pt;
 		font-weight: 300;
 		line-height: 1.65;
@@ -2293,11 +2293,16 @@
 			}
 
 /* List */
+	word-wrap:break-word;(overflow-wrap:break-word;)
 
 	ol {
 		list-style: decimal;
 		margin: 0 0 2em 0;
-		padding-left: 1.25em;
+		padding-left: 1.25em;/*
+		padding-left :10px;
+		padding-right:10px;
+		padding-bottom:10px;
+		padding-top:10;*/
 	}
 
 		ol li {
@@ -2307,11 +2312,16 @@
 	ul {
 		list-style: disc;
 		margin: 0 0 2em 0;
-		padding-left: 1em;
+		/*padding-left: 1em;*/
+		padding-left :2em;
+		padding-right:5em;
+		padding-bottom:1em;
+		padding-top:1em;
 	}
 
 		ul li {
 			padding-left: 0.5em;
+			padding-top: 1em;
 		}
 
 		ul.alt {
