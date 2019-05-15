@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.7.8)  25 APR 2019 11:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.7.8)  9 MAY 2019 09:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -140,41 +140,41 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 34.
 
-Overfull \hbox (26.24599pt too wide) in paragraph at lines 85--92
+Overfull \hbox (26.24599pt too wide) in paragraph at lines 89--96
 \OT1/cmr/m/n/10.95 try break-ing in nonequi-lib-rium open sys-tem,'' JHEP \OT1/cmr/bx/n/10.95 1902\OT1/cmr/m/n/10.95 , 131 (2019) doi:10.1007/JHEP02(2019)131
  []
 
 [1
 
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (1.914pt too wide) in paragraph at lines 251--252
+Overfull \hbox (1.914pt too wide) in paragraph at lines 255--256
 []\OT1/cmr/m/n/10.95 ``Late time evo-lu-tion of isocur-va-ture per-tur-ba-tions at sec-ond or-der'', Padova Uni-ver-sity, 05/2018 
  []
 
 [2]
-Overfull \hbox (8.4231pt too wide) in paragraph at lines 298--299
+Overfull \hbox (8.4231pt too wide) in paragraph at lines 302--303
 []\OT1/cmr/m/n/10.95 Research Fel-low of the Japan So-ci-ety for the Pro-mo-tion of Sci-ence (PD), 01/04/2017 - 31/03/2018 
  []
 
 
-Overfull \hbox (13.36336pt too wide) in paragraph at lines 311--314
+Overfull \hbox (13.36336pt too wide) in paragraph at lines 315--318
 []\OT1/cmr/m/n/10.95 Grant-in-Aid for JSPS Fel-lows, Project/Area Num-ber: 16J03220, Project Pe-riod (FY) 22/04/2016
  []
 
 [3] (/Users/atsuhisaota/Dropbox/Webpage/Atsuhisa_Ota/.texpadtmp/Pub_list.aux) ) 
 Here is how much of TeX's memory you used:
- 1232 strings out of 492646
- 17756 string characters out of 6129564
- 89508 words of memory out of 5000000
- 5142 multiletter control sequences out of 15000+600000
+ 1234 strings out of 492646
+ 17783 string characters out of 6129564
+ 89525 words of memory out of 5000000
+ 5144 multiletter control sequences out of 15000+600000
  7807 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  27i,4n,29p,259b,272s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on /Users/atsuhisaota/Dropbox/Webpage/Atsuhisa_Ota/.texpadtmp/Pub_list.pdf (3 pages, 93557 bytes).
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on /Users/atsuhisaota/Dropbox/Webpage/Atsuhisa_Ota/.texpadtmp/Pub_list.pdf (3 pages, 106262 bytes).
 PDF statistics:
- 38 PDF objects out of 1000 (max. 8388607)
- 26 compressed objects within 1 object stream
+ 46 PDF objects out of 1000 (max. 8388607)
+ 32 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
