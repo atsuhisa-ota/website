@@ -8,15 +8,15 @@
   lines:
     en:
       - "Formulated the linear response of gravity in a dynamical radiation background in quantum field theory."
-      - "Showed explicitly that its hard thermal limit is equivalent to the kinetic response theory based on the Vlasov equation."
+      - "Established on a dynamical background that its hard thermal limit is equivalent to the kinetic response theory based on the Vlasov equation, an equivalence well known in gauge theory and previously suggested for gravity."
       - "Spelled out the constraints that symmetry places on this response."
     ja:
       - "動的な輻射背景における重力の線形応答の理論を、場の量子論で記述した。"
-      - "そのハード・サーマル極限が、ヴラソフ方程式に基づく運動論的な応答理論と等価であることを明示した。"
+      - "ゲージ理論ではよく知られ、重力でも示唆されていた、ハード・サーマル極限とヴラソフ方程式に基づく運動論的な応答理論との等価性を、動的な背景のもとで明確に示した。"
       - "あわせて、この応答に対する対称性の拘束を明文化した。"
     zh:
       - "用量子场论描述了动态辐射背景中引力的线性响应理论。"
-      - "明确证明了其硬热圈（hard thermal）极限与基于弗拉索夫方程的动理学响应理论等价。"
+      - "其硬热圈（hard thermal）极限与基于弗拉索夫方程的动理学响应理论之间的等价性，在规范理论中广为人知，在引力中此前也已有所提示；我们在动态背景下明确证明了这一等价性。"
       - "并明确给出了对称性对该响应的约束。"
   links:
     - {label: "arXiv:2510.22346", url: "https://arxiv.org/abs/2510.22346"}
