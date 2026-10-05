@@ -10,15 +10,15 @@
     en:
       - "Formulated the linear response of gravitational waves in a dynamical radiation background in quantum field theory, for fields of spin 0, 1/2 and 1."
       - "Derived, in the real-time formalism, the kinetic response theory based on the Vlasov equation as the hard-thermal-loop limit."
-      - "Organized the constraints that symmetry places on this response."
+      - "Organized the constraints that symmetry places on this response on a dynamical background, from the viewpoint of the ambiguity under field redefinitions."
     ja:
       - "動的な輻射背景における重力波の線形応答を、スピン0、1/2、1の場の量子論で記述"
       - "硬熱ループ（HTL）極限において、Vlasov方程式に基づく運動論的な応答理論を実時間形式で導出"
-      - "この応答に課される対称性の拘束を整理"
+      - "この応答に課される動的背景での対称性の拘束を、場の再定義に関する不定性の観点から整理"
     zh:
       - "以自旋0、1/2和1的量子场论，描述了动态辐射背景中引力波的线性响应。"
       - "在实时形式下，于硬热圈（HTL）极限导出了基于Vlasov方程的动理学响应理论。"
-      - "系统整理了对称性对该响应的约束。"
+      - "从场重定义所带来的不确定性的角度，系统整理了动态背景下对称性对该响应的约束。"
   links:
     - {label: "arXiv:2510.22346", url: "https://arxiv.org/abs/2510.22346"}
     - {label: "arXiv:2601.03631", url: "https://arxiv.org/abs/2601.03631"}
@@ -31,15 +31,15 @@
     en:
       - "Renormalized the linear response of gravitational waves in a scalar field that depends explicitly on time and is amplified by resonance."
       - "For the ultraviolet divergences of the one-loop response, proposed an adiabatic regularization that takes the coincidence limit in real time."
-      - "Showed that the time dependence produces dynamical local divergences, and identified the counterterms."
+      - "Showed that the time dependence produces new local divergences, and identified the counterterms."
     ja:
       - "時間に陽に依存し、共鳴によって増幅されるスカラー場の中での、重力波の線形応答の繰り込み"
       - "1ループの応答に現れる紫外発散に対し、実時間で一致極限（coincidence limit）をとる断熱正則化を提案"
-      - "時間依存性が動的な局所発散を生むことを示し、対応するカウンター項を特定"
+      - "時間依存性が新たな局所発散を生むことを示し、対応するカウンター項を特定"
     zh:
       - "对显含时间、受共振放大的标量场中引力波的线性响应进行了重整化。"
       - "针对单圈响应中的紫外发散，提出了在实时中取重合极限（coincidence limit）的绝热正规化方案。"
-      - "证明时间依赖性会产生动力学的局域发散，并确定了相应的抵消项。"
+      - "证明时间依赖性会产生新的局域发散，并确定了相应的抵消项。"
   links:
     - {label: "arXiv:2606.16296", url: "https://arxiv.org/abs/2606.16296"}
 
