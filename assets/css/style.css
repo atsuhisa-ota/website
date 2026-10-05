@@ -482,6 +482,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; line-height: 1.
 .site-footer .container { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
 .site-footer a { color: var(--muted); }
 .footer-cat { display: inline-flex; align-items: center; gap: 10px; }
+.ai-note { flex-basis: 100%; font-size: .85rem; opacity: .85; }
 .footer-cat svg { width: 52px; height: 26px; }
 
 /* Responsive ------------------------------------------------------------- */
