@@ -311,10 +311,6 @@ talks.seminar:
   en: "Seminars"
   ja: "セミナー"
   zh: "学术讲座"
-talks.in_japanese:
-  en: "in Japanese"
-  ja: "日本語で講演"
-  zh: "日语报告"
 talks.online:
   en: "online"
   ja: "オンライン"

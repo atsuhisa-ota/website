@@ -485,6 +485,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; line-height: 1.
 .talk-group summary:hover { color: var(--violet); }
 .talk-list { padding: 4px 24px 24px !important; }
 .talk-list .talk-title { display: block; font-weight: 700; }
+.talk-list .talk-subtitle { display: block; font-size: .92rem; font-weight: 400; color: var(--muted); font-style: italic; }
 .talk-list .where { font-size: .92rem; }
 .talk-list .tags { display: block; margin-top: 4px; }
 .talk-group:nth-child(2) { --violet: var(--pink); }

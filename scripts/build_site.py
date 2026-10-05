@@ -222,23 +222,33 @@ class Builder:
         return '\n'.join(out)
 
     def talk(self, t):
-        meta = [pick(t['event'], 'en')] if t.get('event') else []
-        place = ', '.join(p for p in (pick(t.get(k), 'en') for k in ('venue', 'city', 'country')) if p)
+        # Talks at the Physical Society of Japan are listed in Japanese on the Japanese page
+        src = 'ja' if self.lang == 'ja' and t['category'] == 'domestic' else 'en'
+        meta = [pick(t['event'], src)] if t.get('event') else []
+        keys = ('venue',) if src == 'ja' else ('venue', 'city', 'country')   # domestic: the venue is enough
+        place = ', '.join(p for p in (pick(t.get(k), src) for k in keys) if p)
         if place:
             meta.append(place)
         if t.get('online'):
             meta.append(self.t('talks.online'))
         tags = []
-        if t.get('language') == 'ja':
-            tags.append(f'<span class="tag">{esc(self.t("talks.in_japanese"))}</span>')
         if t.get('recording'):
             tags.append(f'<a class="tag is-link" href="{esc(t["recording"])}" target="_blank" rel="noopener">'
                         f'{PLAY}{esc(self.t("talks.recording"))}</a>')
+        title = t['title']
+        if t.get('language') == 'ja' and title.get('ja'):
+            # Talks given in Japanese keep their Japanese title, with the English one beside it
+            title_html = f'<span class="talk-title" lang="ja">{esc(title["ja"])}</span>'
+            if self.lang != 'ja':
+                title_html += f'<span class="talk-subtitle" lang="en">{esc(title["en"])}</span>'
+        else:
+            title_html = f'<span class="talk-title" lang="en">{esc(pick(title, "en"))}</span>'
+        meta_lang = 'ja' if src == 'ja' else 'en'
         return ('<li>'
                 f'<span class="when">{esc(talk_date(t, self.lang)[1])}</span>'
                 '<span class="what">'
-                f'<span class="talk-title" lang="en">{esc(pick(t["title"], "en"))}</span>'
-                f'<span class="where" lang="en">{esc(" · ".join(meta))}</span>'
+                + title_html +
+                f'<span class="where" lang="{meta_lang}">{esc(" · ".join(meta))}</span>'
                 + (f'<span class="tags">{"".join(tags)}</span>' if tags else '') +
                 '</span></li>')
 
