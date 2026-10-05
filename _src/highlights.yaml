@@ -1,44 +1,45 @@
 # Selected results shown under Research Interests, in en / ja / zh.
 # Each item: a title, three short lines, and arXiv links.
+# Names of people (Vlasov, Schwinger–Keldysh, Nambu–Goldstone) stay in Latin letters in every language.
 
 - title:
-    en: "Gravitational response of a dynamical radiation background"
-    ja: "動的な輻射背景における重力の線形応答"
-    zh: "动态辐射背景中的引力线性响应"
+    en: "Gravitational waves in a dynamical radiation background"
+    ja: "動的な輻射背景における重力波の線形応答"
+    zh: "动态辐射背景中引力波的线性响应"
   lines:
     en:
-      - "Formulated the linear response of gravity in a dynamical radiation background in quantum field theory."
-      - "Established on a dynamical background that its hard thermal limit is equivalent to the kinetic response theory based on the Vlasov equation, an equivalence well known in gauge theory and previously suggested for gravity."
-      - "Spelled out the constraints that symmetry places on this response."
+      - "Formulated the linear response of gravitational waves in a dynamical radiation background in quantum field theory, for fields of spin 0, 1/2 and 1."
+      - "Derived, in the real-time formalism, the kinetic response theory based on the Vlasov equation as the hard-thermal-loop limit."
+      - "Organized the constraints that symmetry places on this response."
     ja:
-      - "動的な輻射背景における重力の線形応答の理論を、場の量子論で記述した。"
-      - "ゲージ理論ではよく知られ、重力でも示唆されていた、ハード・サーマル極限とヴラソフ方程式に基づく運動論的な応答理論との等価性を、動的な背景のもとで明確に示した。"
-      - "あわせて、この応答に対する対称性の拘束を明文化した。"
+      - "動的な輻射背景における重力波の線形応答を、スピン0、1/2、1の場の量子論で記述"
+      - "硬熱ループ（HTL）極限において、Vlasov方程式に基づく運動論的な応答理論を実時間形式で導出"
+      - "この応答に課される対称性の拘束を整理"
     zh:
-      - "用量子场论描述了动态辐射背景中引力的线性响应理论。"
-      - "其硬热圈（hard thermal）极限与基于弗拉索夫方程的动理学响应理论之间的等价性，在规范理论中广为人知，在引力中此前也已有所提示；我们在动态背景下明确证明了这一等价性。"
-      - "并明确给出了对称性对该响应的约束。"
+      - "以自旋0、1/2和1的量子场论，描述了动态辐射背景中引力波的线性响应。"
+      - "在实时形式下，于硬热圈（HTL）极限导出了基于Vlasov方程的动理学响应理论。"
+      - "系统整理了对称性对该响应的约束。"
   links:
     - {label: "arXiv:2510.22346", url: "https://arxiv.org/abs/2510.22346"}
     - {label: "arXiv:2601.03631", url: "https://arxiv.org/abs/2601.03631"}
 
 - title:
-    en: "Renormalizing the gravitational response of resonant matter"
-    ja: "共鳴する物質の重力応答の繰り込み"
-    zh: "共振物质引力响应的重整化"
+    en: "Renormalizing the gravitational-wave response of resonant matter"
+    ja: "共鳴する物質の重力波応答の繰り込み"
+    zh: "共振物质中引力波响应的重整化"
   lines:
     en:
-      - "Studied the linear response of gravitational waves in a scalar field that is amplified by resonance and depends explicitly on time."
-      - "Extracted the ultraviolet divergences of the one-loop response systematically with adiabatic regularization."
-      - "Showed that the time dependence produces new local divergences, and identified the terms needed to renormalize them."
+      - "Renormalized the linear response of gravitational waves in a scalar field that depends explicitly on time and is amplified by resonance."
+      - "For the ultraviolet divergences of the one-loop response, proposed an adiabatic regularization that takes the coincidence limit in real time."
+      - "Showed that the time dependence produces dynamical local divergences, and identified the counterterms."
     ja:
-      - "時間に陽に依存し、共鳴によって増幅されるスカラー場の中で、重力波の線形応答を調べた。"
-      - "1ループの応答に現れる紫外発散を、断熱正則化によって系統的に取り出した。"
-      - "時間依存性が新しい局所的な発散を生むことを示し、繰り込みに必要な項を特定した。"
+      - "時間に陽に依存し、共鳴によって増幅されるスカラー場の中での、重力波の線形応答の繰り込み"
+      - "1ループの応答に現れる紫外発散に対し、実時間で一致極限（coincidence limit）をとる断熱正則化を提案"
+      - "時間依存性が動的な局所発散を生むことを示し、対応するカウンター項を特定"
     zh:
-      - "研究了在显含时间、受共振放大的标量场中引力波的线性响应。"
-      - "利用绝热正规化，系统地提取了单圈响应中的紫外发散。"
-      - "证明时间依赖性会产生新的局域发散，并确定了重整化所需的项。"
+      - "对显含时间、受共振放大的标量场中引力波的线性响应进行了重整化。"
+      - "针对单圈响应中的紫外发散，提出了在实时中取重合极限（coincidence limit）的绝热正规化方案。"
+      - "证明时间依赖性会产生动力学的局域发散，并确定了相应的抵消项。"
   links:
     - {label: "arXiv:2606.16296", url: "https://arxiv.org/abs/2606.16296"}
 
@@ -48,17 +49,17 @@
     zh: "带U(1)荷相对论流体的稳定性"
   lines:
     en:
-      - "Studied general first-order relativistic viscous hydrodynamics with a U(1) charge in the framework of effective field theory for dissipative fluids."
+      - "Studied general first-order relativistic viscous hydrodynamics with a U(1) charge in the framework of infrared effective field theory for dissipative fluids."
       - "Analyzed its dispersion relations consistently in the gradient expansion, starting from the most general quadratic action with noise."
-      - "Identified the hydrodynamic modes as Nambu–Goldstone modes and showed that, within the consistent gradient expansion, the theory is stable as an infrared effective theory."
+      - "Proved that, under unitarity and the KMS conditions, it is stable in any inertial frame and any fluid frame as long as the enthalpy is positive."
     ja:
-      - "U(1)電荷をもつ一般の一次相対論的粘性流体を、散逸流体の有効場理論の枠組みで調べた。"
-      - "ノイズを含む最も一般的な二次の作用から、分散関係を勾配展開の中で整合的に解析した。"
-      - "流体の揺らぎを南部・ゴールドストーンモードとして捉え、整合的な勾配展開の範囲で、赤外有効理論として安定であることを示した。"
+      - "U(1)電荷をもつ一般の一次相対論的粘性流体を、散逸流体の赤外有効場理論の枠組みで検討"
+      - "ノイズを含む最も一般的な二次の作用から、分散関係を勾配展開の中で整合的に解析"
+      - "ユニタリティとKMS条件のもとで、エンタルピーが正であれば、任意の慣性系・流体フレームで安定であることを証明"
     zh:
-      - "在耗散流体有效场论的框架下，研究了带U(1)荷的一般一阶相对论黏性流体力学。"
+      - "在耗散流体红外有效场论的框架下，研究了带U(1)荷的一般一阶相对论黏性流体力学。"
       - "从包含噪声的最一般二次作用量出发，在梯度展开中自洽地分析了色散关系。"
-      - "将流体扰动识别为南部–戈德斯通模，并表明在自洽的梯度展开范围内，该理论作为红外有效理论是稳定的。"
+      - "证明在幺正性与KMS条件下，只要焓为正，该理论在任意惯性系和任意流体框架中都是稳定的。"
   links:
     - {label: "arXiv:2410.23837", url: "https://arxiv.org/abs/2410.23837"}
 
@@ -68,16 +69,16 @@
     zh: "开放系统中时间平移对称性的自发破缺"
   lines:
     en:
-      - "In open systems, noise and dissipation break the doubled time-translation symmetry of the Schwinger–Keldysh formalism down to its diagonal part."
-      - "Built on this symmetry structure, constructed the effective field theory of Nambu–Goldstone modes when time translation is spontaneously broken."
+      - "In open systems with fluctuation and dissipation, the time-translation symmetry doubled in the Schwinger–Keldysh formalism is broken down to its diagonal part."
+      - "Built on this symmetry structure, constructed the effective field theory of Nambu–Goldstone modes in phases where time translation is spontaneously broken."
       - "The framework has in view applications to synchronization, time crystals and cosmic inflation."
     ja:
-      - "開放系では、ノイズと散逸によって、シュウィンガー・ケルディッシュ形式で二重化した時間並進対称性が対角部分にまで破れる。"
-      - "この対称性の構造に基づいて、時間並進対称性が自発的に破れた相の南部・ゴールドストーンモードの有効場理論を構築した。"
-      - "同期現象、時間結晶、宇宙のインフレーションへの応用を見すえた枠組みである。"
+      - "揺動と散逸を伴う開放系で、Schwinger–Keldysh形式で二重化した時間並進対称性が対角部分にまで破れることに着目"
+      - "この対称性の構造に基づき、時間並進対称性が自発的に破れた相のNambu–Goldstoneモードの有効場理論を構築"
+      - "同期現象、時間結晶、宇宙のインフレーションへの応用を見すえた枠組み"
     zh:
-      - "在开放系统中，噪声和耗散会将Schwinger–Keldysh形式中加倍的时间平移对称性破缺为其对角部分。"
-      - "基于这一对称性结构，构建了时间平移对称性自发破缺时南部–戈德斯通模的有效场论。"
+      - "在存在涨落与耗散的开放系统中，Schwinger–Keldysh形式中加倍的时间平移对称性会破缺为其对角部分。"
+      - "基于这一对称性结构，构建了时间平移对称性自发破缺相中Nambu–Goldstone模的有效场论。"
       - "该框架着眼于同步现象、时间晶体以及宇宙暴胀等应用。"
   links:
     - {label: "arXiv:1805.06240", url: "https://arxiv.org/abs/1805.06240"}
