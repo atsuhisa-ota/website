@@ -2,20 +2,9 @@
 """Build the English, Japanese and Chinese pages of the website.
 
 Usage:
-    python3 scripts/build_site.py [path/to/mycv]     # default: ../mycv
-
-Inputs:
-    _src/page.html      page template: {{t:key}} text, {{b:name}} generated blocks
-    _src/strings.yaml   text in en / ja / zh
-    _src/cv.yaml        translations of the CV items that come from mycv
-    _src/highlights.yaml  selected results, in en / ja / zh
-    mycv                data/profile.yaml and data/presentations.yaml (private repository)
+    python3 scripts/build_site.py path/to/data
 
 Outputs: index.html (English), ja/index.html, zh/index.html
-
-Only public fields of mycv are written: internal fields such as sources,
-unverified, remarks and notes, grant amounts, numbers and project titles are
-never output, and funding entries listed in HIDDEN_FUNDING are skipped.
 """
 import datetime as dt
 import hashlib
@@ -44,8 +33,7 @@ FONTS = {
 }
 MONTHS = 'Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec'.split()
 
-# Funding entries that must not appear on the website, matched by a hash of
-# their Japanese name so the names are not written in this public repository.
+# Entries that are not listed on the website.
 HIDDEN_FUNDING = {'7c8351dc9414bc5b'}
 
 warnings = []
@@ -56,7 +44,7 @@ def esc(text):
 
 
 def pick(value, lang):
-    """Text of an {en, ja} pair from mycv, falling back to English."""
+    """Text of an {en, ja} pair, falling back to English."""
     if isinstance(value, dict):
         return value.get(lang) or value.get('en') or value.get('ja') or ''
     return value or ''
@@ -101,7 +89,7 @@ def fmt_span(start, end, lang, present):
 
 
 def zh_period(ja_text):
-    """Chinese version of a period written in Japanese in mycv."""
+    """Chinese version of a period written in Japanese."""
     text = ja_text
     for a, b in [('〜現在', '至今'), ('（再入会）', '（重新入会）'), ('博士課程在学中', '博士在读期间'),
                  ('年度', '学年'), ('〜', '—')]:
@@ -185,7 +173,7 @@ class Builder:
         for g in self.profile['funding']:
             if hidden(g):
                 continue
-            en_name = GRANT_NUMBER.sub('', g['en'])          # no grant numbers, amounts or project titles
+            en_name = GRANT_NUMBER.sub('', g['en'])
             ja_name = FULLWIDTH_NUMBER.sub('', g.get('ja', '')).strip()
             name = self.tr('grants', en_name, ja_fallback=ja_name)
             role = pick(g.get('role'), 'en')
@@ -196,10 +184,10 @@ class Builder:
     def teaching(self):
         rows = []
         for c in self.profile['teaching']:
-            if c.get('optional'):            # e.g. private tutoring
+            if c.get('optional'):
                 continue
             course, _, detail = c['en'].partition(' — ')
-            course = re.sub(r'\s*\([^)]*;[^)]*\)', '', course)   # internal notes such as '(cosmology; taught twice)'
+            course = re.sub(r'\s*\([^)]*;[^)]*\)', '', course)
             role, *extras = [s.strip() for s in re.sub(r'\s*\(.*?\)', '', detail).split(',')]
             role = {'TA': 'Teaching assistant'}.get(role, role[:1].upper() + role[1:])
             ja_course = re.sub(r'（[^）]*、[^）]*）', '', c.get('ja', '').partition(' — ')[0])

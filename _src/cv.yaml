@@ -1,8 +1,5 @@
-# Translations of the CV items that come from mycv (data/profile.yaml).
+# Japanese and Chinese names of the CV items.
 # Keys are the English text as it appears on the English page.
-# Japanese text comes from mycv itself, except where given here.
-# A missing entry falls back to mycv's Japanese (ja) or to English (zh),
-# and scripts/build_site.py prints a warning.
 
 positions:
   "Associate Professor, College of Physics, Chongqing University":
