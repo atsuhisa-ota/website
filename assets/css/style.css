@@ -195,7 +195,6 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; line-height: 1.
 
 .hero-role { margin: 18px 0 0; font-size: 1.15rem; font-weight: 600; }
 .hero-role span { display: block; font-weight: 400; color: var(--muted); }
-.hero-intro { margin: 14px 0 0; max-width: 34em; color: var(--muted); }
 
 .pill-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
 
