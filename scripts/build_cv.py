@@ -168,6 +168,7 @@ def build_teaching(profile):
         if c.get('optional'):            # e.g. private tutoring
             continue
         course, _, detail = en(c).partition(' — ')
+        course = re.sub(r'\s*\([^)]*;[^)]*\)', '', course)   # drop internal notes such as '(cosmology; taught twice)'
         role, *extras = [s.strip() for s in re.sub(r'\s*\(.*?\)', '', detail).split(',')]
         role = {'TA': 'Teaching assistant'}.get(role, role[:1].upper() + role[1:])
         extras = [e for e in extras if e]
