@@ -319,6 +319,23 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; line-height: 1.
 .ill .g2 { stop-color: var(--violet-soft); }
 .ill .g3 { stop-color: var(--sky-soft); }
 
+/* Recruiting ------------------------------------------------------------- */
+
+.recruit {
+    padding: 32px 36px;
+    background:
+        radial-gradient(circle at 100% 0, var(--pink-soft) 0, transparent 45%),
+        radial-gradient(circle at 0 100%, var(--sky-soft) 0, transparent 40%),
+        var(--surface);
+}
+.recruit-lead { margin: 0 0 14px; font-family: var(--font-display); font-weight: 600; font-size: 1.45rem; }
+.recruit-points { margin: 0 0 24px; padding: 0; list-style: none; display: grid; gap: 8px; }
+.recruit-points li { position: relative; padding-left: 28px; font-size: 1.05rem; }
+.recruit-points li::before {
+    content: ""; position: absolute; left: 0; top: 4px; width: 18px; height: 18px; background: var(--pink);
+    -webkit-mask: var(--paw) center / contain no-repeat; mask: var(--paw) center / contain no-repeat;
+}
+
 /* Publications ----------------------------------------------------------- */
 
 .pub-status { margin: 0 0 20px; color: var(--muted); }
@@ -403,6 +420,42 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; line-height: 1.
 .plain-list .when { display: block; color: var(--muted); font-size: .92rem; }
 
 /* Talks ------------------------------------------------------------------ */
+.subhead { margin: 36px 0 16px; font-size: 1.3rem; display: flex; align-items: center; gap: 10px; }
+.subhead:first-of-type { margin-top: 0; }
+.count {
+    padding: 1px 10px; border-radius: 999px; background: var(--surface); border: 1px solid var(--line);
+    font-family: var(--font-display); font-weight: 500; font-size: .85rem; color: var(--muted);
+}
+.tag {
+    display: inline-flex; align-items: center; gap: 4px; margin: 2px 4px 0 0; padding: 1px 9px; border-radius: 999px;
+    background: var(--violet-soft); color: var(--ink); font-size: .8rem; font-weight: 600; text-decoration: none; vertical-align: 1px;
+}
+.tag.is-soft { background: transparent; border: 1px solid var(--line); color: var(--muted); font-weight: 400; }
+.tag.is-link { background: var(--pink-soft); }
+.tag.is-link:hover { color: var(--ink); background: var(--pink); }
+.tag svg { width: 10px; height: 10px; }
+
+.talk-groups { display: grid; gap: 14px; }
+.talk-group summary {
+    display: flex; align-items: center; gap: 10px; padding: 18px 24px; cursor: pointer; list-style: none;
+    font-family: var(--font-display); font-weight: 600; font-size: 1.15rem;
+}
+.talk-group summary::-webkit-details-marker { display: none; }
+.talk-group summary::after {
+    content: ""; margin-left: auto; width: 10px; height: 10px;
+    border-right: 2.5px solid var(--muted); border-bottom: 2.5px solid var(--muted);
+    transform: rotate(45deg); transition: transform .2s;
+}
+.talk-group[open] summary::after { transform: rotate(-135deg); }
+.talk-group summary:hover { color: var(--violet); }
+.talk-list { padding: 4px 24px 24px !important; }
+.talk-list .talk-title { display: block; font-weight: 700; }
+.talk-list .where { font-size: .92rem; }
+.talk-list .tags { display: block; margin-top: 4px; }
+.talk-group:nth-child(2) { --violet: var(--pink); }
+.talk-group:nth-child(3) { --violet: var(--mint); }
+.talk-group:nth-child(4) { --violet: var(--sky); }
+
 
 .talk-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
 .talk {
@@ -437,6 +490,8 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; line-height: 1.
     .hero { padding: 40px 0 56px; }
     .cv-grid, .talk-grid, .facts { grid-template-columns: 1fr; }
     .timeline li { grid-template-columns: 1fr; }
+    .talk-group summary { padding: 16px 18px; }
+    .talk-list { padding: 4px 18px 20px !important; }
 }
 
 @media (max-width: 640px) {
@@ -453,5 +508,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; line-height: 1.
     .pub { grid-template-columns: 1fr; padding: 16px 18px; }
     .pub-year { grid-row: auto; justify-self: start; }
     .cv-block { padding: 22px 20px; }
+    .recruit { padding: 24px 20px; }
+    .recruit-lead { font-size: 1.25rem; }
     .about-text p:first-child { font-size: 1.2rem; }
 }

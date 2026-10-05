@@ -27,12 +27,11 @@
     syncToggle();
 
     // Email: assembled here so the address is not in the HTML source ------
-    var email = document.getElementById('email');
-    if (email) {
-        var address = email.dataset.user + '@' + email.dataset.domain;
-        email.href = 'mailto:' + address;
-        email.querySelector('span').textContent = address;
-    }
+    document.querySelectorAll('[data-user][data-domain]').forEach(function (link) {
+        var address = link.dataset.user + '@' + link.dataset.domain;
+        link.href = 'mailto:' + address;
+        if (link.hasAttribute('data-show-address')) link.querySelector('span').textContent = address;
+    });
 
     // Highlight the section currently in view --------------------------------
     var links = Array.prototype.slice.call(document.querySelectorAll('.nav-links a'));
