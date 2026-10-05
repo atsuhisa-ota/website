@@ -175,12 +175,6 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; line-height: 1.
         var(--bg);
 }
 
-.hero-cat {
-    position: absolute; bottom: 0; width: 190px; height: auto;
-    right: max(16px, calc((100% - 1080px) / 2));
-}
-.hero-cat .silhouette { fill: var(--ink); stroke: var(--ink); }
-:root[data-theme="dark"] .hero-cat .silhouette { fill: #06051a; stroke: #06051a; }
 
 .hero-kicker {
     display: inline-flex; align-items: center; gap: 8px;
@@ -431,8 +425,6 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; line-height: 1.
 
 @media (max-width: 860px) {
     .hero { padding: 40px 0 56px; }
-    .hero { padding-bottom: 150px; }
-    .hero-cat { width: 120px; }
     .cv-grid, .talk-grid { grid-template-columns: 1fr; }
     .timeline li { grid-template-columns: 1fr; }
 }
