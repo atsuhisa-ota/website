@@ -1,5 +1,5 @@
 # Selected results shown under Research Interests, in en / ja / zh.
-# Each item: a title, three short lines, and links to the papers.
+# Each item: a title, three short lines, and arXiv links.
 
 - title:
     en: "Gravitational response of a dynamical radiation background"
@@ -21,7 +21,6 @@
   links:
     - {label: "arXiv:2510.22346", url: "https://arxiv.org/abs/2510.22346"}
     - {label: "arXiv:2601.03631", url: "https://arxiv.org/abs/2601.03631"}
-    - {label: "JHEP 06 (2026) 216", url: "https://doi.org/10.1007/JHEP06(2026)216"}
 
 - title:
     en: "Renormalizing the gravitational response of resonant matter"
@@ -30,15 +29,15 @@
   lines:
     en:
       - "Studied the linear response of gravitational waves in a scalar field that is amplified by resonance and depends explicitly on time."
-      - "Extracted the ultraviolet divergences of the response systematically with adiabatic regularization."
+      - "Extracted the ultraviolet divergences of the one-loop response systematically with adiabatic regularization."
       - "Showed that the time dependence produces new local divergences, and identified the terms needed to renormalize them."
     ja:
       - "時間に陽に依存し、共鳴によって増幅されるスカラー場の中で、重力波の線形応答を調べた。"
-      - "応答に現れる紫外発散を、断熱正則化によって系統的に取り出した。"
+      - "1ループの応答に現れる紫外発散を、断熱正則化によって系統的に取り出した。"
       - "時間依存性が新しい局所的な発散を生むことを示し、繰り込みに必要な項を特定した。"
     zh:
       - "研究了在显含时间、受共振放大的标量场中引力波的线性响应。"
-      - "利用绝热正规化，系统地提取了响应中的紫外发散。"
+      - "利用绝热正规化，系统地提取了单圈响应中的紫外发散。"
       - "证明时间依赖性会产生新的局域发散，并确定了重整化所需的项。"
   links:
     - {label: "arXiv:2606.16296", url: "https://arxiv.org/abs/2606.16296"}
@@ -49,20 +48,19 @@
     zh: "带U(1)荷相对论流体的稳定性"
   lines:
     en:
-      - "Formulated general first-order relativistic viscous hydrodynamics with a U(1) charge as an effective field theory of dissipative systems."
+      - "Studied general first-order relativistic viscous hydrodynamics with a U(1) charge in the framework of effective field theory for dissipative fluids."
       - "Analyzed its dispersion relations consistently in the gradient expansion, starting from the most general quadratic action with noise."
-      - "Identified the hydrodynamic modes as Nambu–Goldstone modes and proved the stability of the theory as an infrared effective theory."
+      - "Identified the hydrodynamic modes as Nambu–Goldstone modes and showed that, within the consistent gradient expansion, the theory is stable as an infrared effective theory."
     ja:
-      - "U(1)電荷をもつ一般の一次相対論的粘性流体を、散逸系の有効場理論として定式化した。"
+      - "U(1)電荷をもつ一般の一次相対論的粘性流体を、散逸流体の有効場理論の枠組みで調べた。"
       - "ノイズを含む最も一般的な二次の作用から、分散関係を勾配展開の中で整合的に解析した。"
-      - "流体の揺らぎを南部・ゴールドストーンモードとして捉え、赤外有効理論としての安定性を証明した。"
+      - "流体の揺らぎを南部・ゴールドストーンモードとして捉え、整合的な勾配展開の範囲で、赤外有効理論として安定であることを示した。"
     zh:
-      - "在耗散系统有效场论的框架下，表述了带U(1)荷的一般一阶相对论黏性流体力学。"
+      - "在耗散流体有效场论的框架下，研究了带U(1)荷的一般一阶相对论黏性流体力学。"
       - "从包含噪声的最一般二次作用量出发，在梯度展开中自洽地分析了色散关系。"
-      - "将流体扰动识别为南部–戈德斯通模，并证明了该理论作为红外有效理论的稳定性。"
+      - "将流体扰动识别为南部–戈德斯通模，并表明在自洽的梯度展开范围内，该理论作为红外有效理论是稳定的。"
   links:
     - {label: "arXiv:2410.23837", url: "https://arxiv.org/abs/2410.23837"}
-    - {label: "Phys. Rev. D 114, 016001 (2026)", url: "https://doi.org/10.1103/qx2y-v2v6"}
 
 - title:
     en: "Spontaneous breaking of time translation in open systems"
@@ -83,4 +81,3 @@
       - "该框架着眼于同步现象、时间晶体以及宇宙暴胀等应用。"
   links:
     - {label: "arXiv:1805.06240", url: "https://arxiv.org/abs/1805.06240"}
-    - {label: "JHEP 02 (2019) 131", url: "https://doi.org/10.1007/JHEP02(2019)131"}
