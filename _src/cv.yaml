@@ -1,0 +1,56 @@
+# Translations of the CV items that come from mycv (data/profile.yaml).
+# Keys are the English text as it appears on the English page.
+# Japanese text comes from mycv itself, except where given here.
+# A missing entry falls back to mycv's Japanese (ja) or to English (zh),
+# and scripts/build_site.py prints a warning.
+
+positions:
+  "Associate Professor, College of Physics, Chongqing University":
+    ja: {title: "准教授", where: "重慶大学 物理学院"}
+    zh: {title: "副教授", where: "重庆大学物理学院"}
+  "IAS Postdoctoral Fellow, HKUST Jockey Club Institute for Advanced Study":
+    ja: {title: "IAS Postdoctoral Fellow", where: "香港科技大学 高等研究所（HKUST Jockey Club Institute for Advanced Study）"}
+    zh: {title: "IAS 博士后研究员", where: "香港科技大学赛马会高等研究院"}
+  "Postdoctoral Researcher, Department of Physics and Astronomy, Ohio University":
+    ja: {title: "博士研究員", where: "オハイオ大学 物理学・天文学科"}
+    zh: {title: "博士后研究员", where: "俄亥俄大学物理与天文学系"}
+  "JSPS Overseas Research Fellow, DAMTP, University of Cambridge":
+    ja: {title: "日本学術振興会 海外特別研究員", where: "ケンブリッジ大学 応用数学・理論物理学科（DAMTP）"}
+    zh: {title: "日本学术振兴会海外特别研究员", where: "剑桥大学应用数学与理论物理系（DAMTP）"}
+  "JSPS Research Fellow (PD), Tokyo Institute of Technology":
+    ja: {title: "日本学術振興会 特別研究員（PD）", where: "東京工業大学"}
+    zh: {title: "日本学术振兴会特别研究员（PD）", where: "东京工业大学"}
+  "JSPS Research Fellow (DC2), Tokyo Institute of Technology":
+    ja: {title: "日本学術振興会 特別研究員（DC2）", where: "東京工業大学"}
+    zh: {title: "日本学术振兴会特别研究员（DC2）", where: "东京工业大学"}
+
+memberships:
+  "The Physical Society of Japan": {zh: "日本物理学会"}
+  "Rironkon (Theoretical Astrophysics Society of Japan)": {zh: "日本理论天文学与天体物理学恳谈会（Rironkon）"}
+  "UK Cosmology": {zh: "UK Cosmology"}
+  "Dark Energy Spectroscopic Instrument (DESI) Collaboration": {zh: "暗能量光谱巡天（DESI）合作组"}
+
+grants:
+  "National Natural Science Foundation of China, Young Scientists Fund (Category C)": {zh: "国家自然科学基金青年科学基金项目（C类）"}
+  "Chongqing New YC Project": {zh: "重庆市新重庆YC项目"}
+  "JSPS Overseas Research Fellowship": {zh: "日本学术振兴会海外特别研究员"}
+  "JSPS KAKENHI Grant-in-Aid for JSPS Fellows (DC2, then PD)": {zh: "日本学术振兴会科研费 特别研究员奖励费（DC2，后转为PD）"}
+
+teaching:
+  "Cosmology (graduate), Chongqing University": {zh: "宇宙学（研究生课程），重庆大学"}
+  "Introduction to Astrophysics (graduate), Chongqing University": {zh: "天体物理导论（研究生课程），重庆大学"}
+  "Introduction to Quantum Information Theory (graduate), Chongqing University": {zh: "量子信息理论导论（研究生课程），重庆大学"}
+  "Effective theory of hydrodynamic modes, Saga University": {zh: "流体模式的有效理论，佐贺大学"}
+  "Analytical Mechanics (problem sessions), Dept. of Physics, Tokyo Institute of Technology": {zh: "分析力学习题课，东京工业大学物理系"}
+  "Electromagnetism (problem sessions), Dept. of Physics, Tokyo Institute of Technology": {zh: "电磁学习题课，东京工业大学物理系"}
+  "Physics B and C (university-wide physics problem sessions), Tokyo Institute of Technology": {zh: "物理学B、C（全校基础物理习题课），东京工业大学"}
+  "Academic Presentation (graduate), Tokyo Institute of Technology": {zh: "学术演讲（研究生课程），东京工业大学"}
+
+# Short labels after each item
+tags:
+  "PI": {ja: "研究代表者", zh: "主持"}
+  "Lecturer": {ja: "講義担当", zh: "主讲"}
+  "Intensive lecture course": {ja: "集中講義", zh: "短期集中授课"}
+  "Teaching assistant": {ja: "TA", zh: "助教"}
+  "in English": {ja: "英語で講義", zh: "英文授课"}
+  "own lecture notes": {ja: "自作の講義ノート", zh: "自编讲义"}

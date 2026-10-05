@@ -1,0 +1,338 @@
+# Text of the website in English, Japanese and Simplified Chinese.
+# scripts/build_site.py fills {{t:key}} in _src/page.html with these strings.
+# Values may contain HTML. Publication data and talk data are not translated.
+
+meta.title:
+  en: "Atsuhisa Ota"
+  ja: "太田 敦久"
+  zh: "太田敦久"
+meta.description:
+  en: "Atsuhisa Ota — Associate Professor at the School of Physics, Chongqing University. Theoretical physics and cosmology."
+  ja: "太田敦久（重慶大学 物理学院 准教授）のウェブサイト。理論物理学・宇宙論。"
+  zh: "太田敦久，重庆大学物理学院副教授，从事理论物理与宇宙学研究。"
+
+brand:
+  en: "A. Ota"
+  ja: "太田 敦久"
+  zh: "太田敦久"
+
+ui.main_nav:
+  en: "Main"
+  ja: "メインメニュー"
+  zh: "主导航"
+ui.theme:
+  en: "Toggle dark mode"
+  ja: "ダークモードの切り替え"
+  zh: "切换深色模式"
+ui.language:
+  en: "Language"
+  ja: "言語"
+  zh: "语言"
+
+nav.about:
+  en: "About"
+  ja: "自己紹介"
+  zh: "关于我"
+nav.research:
+  en: "Research"
+  ja: "研究"
+  zh: "研究"
+nav.publications:
+  en: "Publications"
+  ja: "論文"
+  zh: "论文"
+nav.cv:
+  en: "CV"
+  ja: "経歴"
+  zh: "简历"
+nav.talks:
+  en: "Talks"
+  ja: "講演"
+  zh: "学术报告"
+nav.recruiting:
+  en: "Recruiting"
+  ja: "学生募集"
+  zh: "招生"
+
+hero.kicker:
+  en: "Theoretical physics · Cosmology"
+  ja: "理論物理学・宇宙論"
+  zh: "理论物理 · 宇宙学"
+hero.name:
+  en: "Atsuhisa Ota"
+  ja: "太田 敦久<span class=\"name-sub\">Atsuhisa Ota</span>"
+  zh: "太田敦久<span class=\"name-sub\">Atsuhisa Ota</span>"
+hero.role:
+  en: "Associate Professor"
+  ja: "准教授"
+  zh: "副教授"
+hero.affil:
+  en: "School of Physics, Chongqing University"
+  ja: "重慶大学 物理学院"
+  zh: "重庆大学物理学院"
+
+about.title:
+  en: "About me"
+  ja: "自己紹介"
+  zh: "关于我"
+about.fact1:
+  en: "I do research in theoretical physics in Chongqing, China."
+  ja: "中国・重慶で理論物理学の研究をしています。"
+  zh: "我在中国重庆从事理论物理研究。"
+about.fact2:
+  en: "My field is cosmology and the non-equilibrium systems related to it."
+  ja: "専門は宇宙論と、それに関連する非平衡系です。"
+  zh: "研究方向为宇宙学以及与之相关的非平衡系统。"
+about.fact3:
+  en: "I love cats and a good drink."
+  ja: "好きなものは猫とお酒です。"
+  zh: "喜欢猫，也爱小酌几杯。"
+about.figure:
+  en: "Research illustration"
+  ja: "研究のイラスト"
+  zh: "研究插图"
+about.figure_alt:
+  en: "Cats acting out each research idea"
+  ja: "研究のキーワードを猫で表したイラスト"
+  zh: "用猫来表现各个研究关键词的插图"
+about.swipe:
+  en: "Swipe to see the whole picture →"
+  ja: "横にスワイプすると全体を見られます →"
+  zh: "左右滑动可查看完整图片 →"
+about.keywords:
+  en: "Research keywords"
+  ja: "研究キーワード"
+  zh: "研究关键词"
+
+kw.1:
+  en: "Cosmology"
+  ja: "宇宙論"
+  zh: "宇宙学"
+kw.2:
+  en: "Symmetry"
+  ja: "対称性"
+  zh: "对称性"
+kw.3:
+  en: "Gravitational waves"
+  ja: "重力波"
+  zh: "引力波"
+kw.4:
+  en: "Effective field theory"
+  ja: "有効場理論"
+  zh: "有效场论"
+kw.5:
+  en: "Inflation"
+  ja: "インフレーション"
+  zh: "暴胀"
+kw.6:
+  en: "Open quantum systems"
+  ja: "開放量子系"
+  zh: "开放量子系统"
+kw.7:
+  en: "Cosmological perturbation theory"
+  ja: "宇宙論的摂動論"
+  zh: "宇宙学微扰理论"
+kw.8:
+  en: "Fluctuation–dissipation relation"
+  ja: "揺動散逸関係"
+  zh: "涨落-耗散关系"
+
+research.title:
+  en: "Research Interests"
+  ja: "研究の関心"
+  zh: "研究兴趣"
+research.p1:
+  en: "I believe the appeal of theoretical physics lies in its power to depict, through theory, a world that we cannot see directly. Testing by experiment and observation is indispensable, but what excites me most is that theory can predict and understand a world that has not yet been seen."
+  ja: "理論物理学の魅力は、直接には見ることのできない世界の姿を、理論を通して描けることだと考えています。実験や観測による検証を欠かすことはできませんが、それらに先立って、まだ見えていない世界を予言し理解できることに、私は研究の面白さを感じています。"
+  zh: "我认为，理论物理的魅力在于能够借助理论，描绘出我们无法直接看到的世界。实验和观测的检验固然不可或缺，但在此之前就能预言并理解尚未被看见的世界，正是我在研究中感受到的乐趣所在。"
+research.p2:
+  en: "For me, the foremost example is the universe itself. The matter and radiation in the universe carry slight unevenness in density and temperature, and spacetime itself fluctuates, with its ripples traveling as gravitational waves. How these fluctuations were born and how they have evolved reflect the state of the early universe and the properties of the matter in it. Through cosmological perturbation theory, which computes their time evolution, I have been tracing the picture of the beginning of the universe."
+  ja: "私にとって、その対象の最たるものが宇宙です。宇宙の物質や輻射にはわずかな密度や温度のむらがあり、時空にも重力波として伝わる変動があります。こうした「揺らぎ」の生まれ方や、その後の変化には、当時の宇宙の状態や物質の性質が反映されます。私は、その時間発展を計算する宇宙論的摂動論を通して、宇宙開闢の姿を追ってきました。"
+  zh: "对我而言，其中最具代表性的研究对象就是宇宙。宇宙中的物质和辐射在密度与温度上存在微小的不均匀，时空本身也存在以引力波形式传播的扰动。这些“涨落”如何产生、此后又如何演化，反映了当时宇宙的状态和物质的性质。我一直通过计算其时间演化的宇宙学微扰理论，追寻宇宙诞生之初的图景。"
+
+recruit.title:
+  en: "Recruiting"
+  ja: "学生募集"
+  zh: "招生信息"
+recruit.lead:
+  en: "I am currently accepting master's students."
+  ja: "修士課程の大学院生を受け入れています。"
+  zh: "目前正在招收硕士研究生。"
+recruit.p1:
+  en: "I'm looking for students who can work hard with positive energy."
+  ja: "ポジティブなエネルギーで頑張れる学生に来てほしいです。"
+  zh: "欢迎充满正能量、肯努力的同学加入。"
+recruit.p2:
+  en: "Passing the graduate entrance examination is the minimum requirement."
+  ja: "大学院入試に合格することが最低条件です。"
+  zh: "通过研究生入学考试是最基本的条件。"
+recruit.p3:
+  en: "Details will be discussed in an interview."
+  ja: "詳細は面接でお話しします。"
+  zh: "具体事宜将在面试时详谈。"
+recruit.contact:
+  en: "Get in touch"
+  ja: "メールで問い合わせる"
+  zh: "联系我"
+
+pubs.title:
+  en: "Publications"
+  ja: "論文"
+  zh: "论文"
+pubs.from:
+  en: "From <a href=\"https://inspirehep.net/authors?q=ids.value:A.Ota.1\" target=\"_blank\" rel=\"noopener\">INSPIRE-HEP</a>"
+  ja: "出典：<a href=\"https://inspirehep.net/authors?q=ids.value:A.Ota.1\" target=\"_blank\" rel=\"noopener\">INSPIRE-HEP</a>"
+  zh: "数据来源：<a href=\"https://inspirehep.net/authors?q=ids.value:A.Ota.1\" target=\"_blank\" rel=\"noopener\">INSPIRE-HEP</a>"
+pubs.loading:
+  en: "Loading the publication list…"
+  ja: "論文リストを読み込んでいます…"
+  zh: "正在加载论文列表…"
+pubs.show_all:
+  en: "Show all papers"
+  ja: "すべて表示"
+  zh: "显示全部"
+
+# Strings used by assets/js/publications.js ({n} is replaced by a number)
+js.count:
+  en: "{n} papers, newest first, updated automatically."
+  ja: "全{n}編。新しい順に並べ、自動で更新しています。"
+  zh: "共 {n} 篇，按时间由近及远排列，自动更新。"
+js.see_all:
+  en: "See all on INSPIRE-HEP"
+  ja: "INSPIRE-HEP で見る"
+  zh: "在 INSPIRE-HEP 上查看"
+js.error:
+  en: "The publication list could not be loaded right now."
+  ja: "論文リストを読み込めませんでした。"
+  zh: "暂时无法加载论文列表。"
+js.show_all_n:
+  en: "Show all {n} papers"
+  ja: "すべて表示（{n}編）"
+  zh: "显示全部 {n} 篇"
+js.citations:
+  en: "Citations: {n}"
+  ja: "被引用数 {n}"
+  zh: "被引 {n} 次"
+js.untitled:
+  en: "Untitled"
+  ja: "無題"
+  zh: "无标题"
+
+cv.title:
+  en: "Curriculum Vitae"
+  ja: "経歴"
+  zh: "个人简历"
+cv.positions:
+  en: "Research positions"
+  ja: "職歴"
+  zh: "工作经历"
+cv.education:
+  en: "Education"
+  ja: "学歴"
+  zh: "教育背景"
+cv.edu1_when:
+  en: "Mar 2017"
+  ja: "2017年3月"
+  zh: "2017年3月"
+cv.edu1:
+  en: "Ph.D. in Physics, Tokyo Institute of Technology"
+  ja: "博士（理学）、東京工業大学"
+  zh: "理学博士，东京工业大学"
+cv.edu2_when:
+  en: "Mar 2014"
+  ja: "2014年3月"
+  zh: "2014年3月"
+cv.edu2:
+  en: "M.S. in Physics, Tokyo Institute of Technology"
+  ja: "修士（理学）、東京工業大学"
+  zh: "理学硕士，东京工业大学"
+cv.edu3_when:
+  en: "Mar 2012"
+  ja: "2012年3月"
+  zh: "2012年3月"
+cv.edu3:
+  en: "B.S. in Physics, Tokyo Institute of Technology"
+  ja: "学士（理学）、東京工業大学"
+  zh: "理学学士，东京工业大学"
+cv.memberships:
+  en: "Memberships"
+  ja: "所属学会"
+  zh: "学术团体"
+cv.grants:
+  en: "Grants and fellowships"
+  ja: "研究費・フェローシップ"
+  zh: "科研项目与资助"
+cv.teaching:
+  en: "Teaching"
+  ja: "教育歴"
+  zh: "教学经历"
+cv.languages:
+  en: "Languages"
+  ja: "言語"
+  zh: "语言能力"
+cv.lang_ja:
+  en: "Japanese"
+  ja: "日本語"
+  zh: "日语"
+cv.native:
+  en: "native"
+  ja: "母語"
+  zh: "母语"
+cv.lang_en:
+  en: "English"
+  ja: "英語"
+  zh: "英语"
+cv.fluent:
+  en: "fluent"
+  ja: "流暢"
+  zh: "流利"
+cv.present:
+  en: "present"
+  ja: "現在"
+  zh: "至今"
+
+talks.title:
+  en: "Talks"
+  ja: "講演"
+  zh: "学术报告"
+talks.invited:
+  en: "Invited talks"
+  ja: "招待講演"
+  zh: "特邀报告"
+talks.contributed:
+  en: "Talks at conferences and workshops"
+  ja: "国際会議・研究会での講演"
+  zh: "国际会议及研讨会报告"
+talks.domestic:
+  en: "Talks at the Physical Society of Japan meetings"
+  ja: "日本物理学会での講演"
+  zh: "日本物理学会年会报告"
+talks.seminar:
+  en: "Seminars"
+  ja: "セミナー"
+  zh: "学术讲座"
+talks.in_japanese:
+  en: "in Japanese"
+  ja: "日本語で講演"
+  zh: "日语报告"
+talks.online:
+  en: "online"
+  ja: "オンライン"
+  zh: "线上"
+talks.recording:
+  en: "Recording"
+  ja: "録画"
+  zh: "录像"
+
+footer.name:
+  en: "Atsuhisa Ota"
+  ja: "太田 敦久"
+  zh: "太田敦久"
+footer.pubdata:
+  en: "Publication data from <a href=\"https://inspirehep.net\" target=\"_blank\" rel=\"noopener\">INSPIRE-HEP</a>"
+  ja: "論文データ：<a href=\"https://inspirehep.net\" target=\"_blank\" rel=\"noopener\">INSPIRE-HEP</a>"
+  zh: "论文数据来源：<a href=\"https://inspirehep.net\" target=\"_blank\" rel=\"noopener\">INSPIRE-HEP</a>"
+footer.ai:
+  en: "This website was made with generative AI (Claude)."
+  ja: "このサイトは生成AI（Claude）を使って作成しました。"
+  zh: "本网站借助生成式人工智能（Claude）制作。"

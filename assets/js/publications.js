@@ -9,6 +9,20 @@
     var INITIAL_COUNT = 10;
     var PROFILE_URL = 'https://inspirehep.net/authors?q=ids.value:' + AUTHOR_ID;
 
+    // Text in the language of the page (set by the page as window.SITE_I18N)
+    var TEXT = window.SITE_I18N || {
+        count: '{n} papers, newest first, updated automatically.',
+        see_all: 'See all on INSPIRE-HEP',
+        error: 'The publication list could not be loaded right now.',
+        show_all_n: 'Show all {n} papers',
+        citations: 'Citations: {n}',
+        untitled: 'Untitled'
+    };
+
+    function text(key, n) {
+        return TEXT[key].replace('{n}', n);
+    }
+
     var API_URL = 'https://inspirehep.net/api/literature' +
         '?q=' + encodeURIComponent('a ' + AUTHOR_ID) +
         '&sort=mostrecent&size=250' +
@@ -82,7 +96,7 @@
 
         var title = el('span', 'pub-title');
         title.appendChild(link('https://inspirehep.net/literature/' + meta.control_number,
-            (meta.titles && meta.titles[0] && meta.titles[0].title) || 'Untitled'));
+            (meta.titles && meta.titles[0] && meta.titles[0].title) || text('untitled')));
         li.appendChild(title);
         li.appendChild(renderAuthors(meta));
 
@@ -93,15 +107,14 @@
         var arxiv = meta.arxiv_eprints && meta.arxiv_eprints[0] && meta.arxiv_eprints[0].value;
         if (arxiv) links.appendChild(link('https://arxiv.org/abs/' + arxiv, 'arXiv:' + arxiv));
         links.appendChild(link('https://inspirehep.net/literature/' + meta.control_number +
-            '?ui-citation-summary=true', 'Citations: ' + (meta.citation_count || 0)));
+            '?ui-citation-summary=true', text('citations', meta.citation_count || 0)));
         li.appendChild(links);
         return li;
     }
 
-    function setStatus(status, text) {
-        status.textContent = text + ' ';
-        status.appendChild(link(PROFILE_URL, 'See all on INSPIRE-HEP'));
-        status.appendChild(document.createTextNode('.'));
+    function setStatus(status, message) {
+        status.textContent = message + ' ';
+        status.appendChild(link(PROFILE_URL, text('see_all')));
     }
 
     function load() {
@@ -123,10 +136,10 @@
                     if (i >= INITIAL_COUNT) item.hidden = true;
                     list.appendChild(item);
                 });
-                setStatus(status, hits.length + ' papers, newest first, updated automatically.');
+                setStatus(status, text('count', hits.length));
                 if (hits.length > INITIAL_COUNT) {
                     var button = more.querySelector('button');
-                    button.textContent = 'Show all ' + hits.length + ' papers';
+                    button.textContent = text('show_all_n', hits.length);
                     more.hidden = false;
                     button.addEventListener('click', function () {
                         Array.prototype.forEach.call(list.children, function (item) { item.hidden = false; });
@@ -136,7 +149,7 @@
             })
             .catch(function () {
                 list.textContent = '';
-                setStatus(status, 'The publication list could not be loaded right now.');
+                setStatus(status, text('error'));
             });
     }
 

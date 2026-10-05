@@ -33,6 +33,19 @@
         if (link.hasAttribute('data-show-address')) link.querySelector('span').textContent = address;
     });
 
+    // Language menu: keep the current section when switching, close on outside click
+    var langMenu = document.querySelector('.lang-menu');
+    if (langMenu) {
+        langMenu.querySelectorAll('[data-lang-link]').forEach(function (link) {
+            link.addEventListener('click', function () {
+                if (location.hash) link.href = link.href.split('#')[0] + location.hash;
+            });
+        });
+        document.addEventListener('click', function (event) {
+            if (!langMenu.contains(event.target)) langMenu.removeAttribute('open');
+        });
+    }
+
     // Highlight the section currently in view --------------------------------
     var links = Array.prototype.slice.call(document.querySelectorAll('.nav-links a'));
     if (!('IntersectionObserver' in window)) return;
