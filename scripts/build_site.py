@@ -8,6 +8,7 @@ Inputs:
     _src/page.html      page template: {{t:key}} text, {{b:name}} generated blocks
     _src/strings.yaml   text in en / ja / zh
     _src/cv.yaml        translations of the CV items that come from mycv
+    _src/highlights.yaml  selected results, in en / ja / zh
     mycv                data/profile.yaml and data/presentations.yaml (private repository)
 
 Outputs: index.html (English), ja/index.html, zh/index.html
@@ -135,8 +136,9 @@ GRANT_NUMBER = re.compile(r'\s*\((?=[^)]*\d)[A-Z0-9-]+\)')
 
 
 class Builder:
-    def __init__(self, lang, strings, cv, profile, talks):
+    def __init__(self, lang, strings, cv, profile, talks, highlights):
         self.lang, self.strings, self.cv, self.profile, self.talks = lang, strings, cv, profile, talks
+        self.highlights_data = highlights
 
     def t(self, key):
         return self.strings[key][self.lang]
@@ -252,6 +254,17 @@ class Builder:
                 + (f'<span class="tags">{"".join(tags)}</span>' if tags else '') +
                 '</span></li>')
 
+    def highlights(self):
+        cards = []
+        for i, h in enumerate(self.highlights_data, 1):
+            lines = ''.join(f'<li>{esc(line)}</li>' for line in h['lines'][self.lang])
+            links = ''.join(f'<a href="{esc(l["url"])}" target="_blank" rel="noopener">{esc(l["label"])}</a>'
+                            for l in h['links'])
+            cards.append('<article class="card highlight">'
+                         f'<h3><span class="num">{i:02d}</span>{esc(h["title"][self.lang])}</h3>'
+                         f'<ul>{lines}</ul><p class="pub-links">{links}</p></article>')
+        return '<div class="highlights">' + ''.join(cards) + '</div>'
+
     def langmenu(self):
         root = LANGS[self.lang][2]
         items = []
@@ -283,7 +296,7 @@ class Builder:
     def render(self, template):
         blocks = {
             'positions': self.positions, 'memberships': self.memberships, 'grants': self.grants,
-            'teaching': self.teaching, 'talks': self.talks_block, 'langmenu': self.langmenu,
+            'teaching': self.teaching, 'talks': self.talks_block, 'highlights': self.highlights, 'langmenu': self.langmenu,
             'alternates': self.alternates, 'fonts': self.fonts, 'js_strings': self.js_strings,
         }
         page = re.sub(r'\{\{b:(\w+)\}\}', lambda m: blocks[m.group(1)](), template)
@@ -301,6 +314,7 @@ def main():
     cv = yaml.safe_load((SRC / 'cv.yaml').read_text(encoding='utf-8'))
     profile = yaml.safe_load((MYCV / 'data/profile.yaml').read_text(encoding='utf-8'))
     talks = yaml.safe_load((MYCV / 'data/presentations.yaml').read_text(encoding='utf-8'))
+    highlights = yaml.safe_load((SRC / 'highlights.yaml').read_text(encoding='utf-8'))
 
     missing = [f'{k} ({lang})' for k, v in strings.items() for lang in LANGS if lang not in v]
     if missing:
@@ -309,7 +323,7 @@ def main():
     for lang, (_, path, *_rest) in LANGS.items():
         out = ROOT / path
         out.parent.mkdir(parents=True, exist_ok=True)
-        out.write_text(Builder(lang, strings, cv, profile, talks).render(template), encoding='utf-8')
+        out.write_text(Builder(lang, strings, cv, profile, talks, highlights).render(template), encoding='utf-8')
         print(f'wrote {path}')
     for w in dict.fromkeys(warnings):
         print('warning:', w)
