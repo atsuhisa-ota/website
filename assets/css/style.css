@@ -259,18 +259,14 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; line-height: 1.
 .about-text p:last-child { margin-bottom: 0; }
 
 /* Research --------------------------------------------------------------- */
-.themes { display: grid; gap: 20px; }
-.theme { padding: 32px 36px; }
-.theme h3 { display: flex; align-items: baseline; gap: 14px; font-size: 1.45rem; margin-bottom: 16px; }
-.theme .num {
-    flex: none; padding: 2px 10px; border-radius: 10px;
-    background: var(--violet-soft); color: var(--violet); font-size: .95rem;
-}
-.theme:nth-child(2) .num { background: var(--pink-soft); color: var(--pink); }
-.theme p { margin: 0 0 1em; max-width: 50em; line-height: 1.8; }
-.theme p:last-child { margin-bottom: 0; }
+.facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 0 0 20px; padding: 0; list-style: none; }
+.facts li { display: flex; align-items: center; gap: 14px; padding: 18px 20px; font-size: 1.02rem; line-height: 1.45; }
+.fact-icon { flex: none; width: 42px; height: 42px; border-radius: 14px; display: grid; place-items: center; }
+.fact-icon svg { width: 22px; height: 22px; }
+.fact-icon.pink { background: var(--pink-soft); color: var(--pink); }
+.fact-icon.violet { background: var(--violet-soft); color: var(--violet); }
+.fact-icon.mint { background: var(--mint-soft); color: var(--mint); }
 
-.subhead { margin: 56px 0 16px; font-size: 1.35rem; }
 
 
 .figure { margin: 0; padding: 20px; }
@@ -440,7 +436,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; line-height: 1.
 
 @media (max-width: 860px) {
     .hero { padding: 40px 0 56px; }
-    .cv-grid, .talk-grid { grid-template-columns: 1fr; }
+    .cv-grid, .talk-grid, .facts { grid-template-columns: 1fr; }
     .timeline li { grid-template-columns: 1fr; }
 }
 
@@ -458,7 +454,5 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; line-height: 1.
     .pub { grid-template-columns: 1fr; padding: 16px 18px; }
     .pub-year { grid-row: auto; justify-self: start; }
     .cv-block { padding: 22px 20px; }
-    .theme { padding: 24px 20px; }
-    .theme h3 { font-size: 1.25rem; flex-direction: column; gap: 8px; }
     .about-text p:first-child { font-size: 1.2rem; }
 }
