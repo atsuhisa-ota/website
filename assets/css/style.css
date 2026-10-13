@@ -387,6 +387,12 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; line-height: 1.
     -webkit-mask: var(--paw) center / contain no-repeat; mask: var(--paw) center / contain no-repeat;
 }
 
+/* Software --------------------------------------------------------------- */
+
+.software { padding: 26px 30px; }
+.software h3 { margin: 0 0 8px; font-size: 1.3rem; }
+.software p { margin: 0; }
+
 /* Publications ----------------------------------------------------------- */
 
 .pub-status { margin: 0 0 20px; color: var(--muted); }

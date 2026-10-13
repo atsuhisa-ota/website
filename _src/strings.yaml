@@ -49,6 +49,10 @@ nav.talks:
   en: "Talks"
   ja: "講演"
   zh: "学术报告"
+nav.software:
+  en: "Software"
+  ja: "ソフトウェア"
+  zh: "软件"
 nav.recruiting:
   en: "Recruiting"
   ja: "学生募集"
@@ -324,6 +328,15 @@ talks.recording:
   en: "Recording"
   ja: "録画"
   zh: "录像"
+
+software.title:
+  en: "Software"
+  ja: "ソフトウェア"
+  zh: "软件"
+software.papurr:
+  en: "A Chrome extension that keeps the papers you read on arXiv, INSPIRE, NASA ADS and journal sites in one folder you choose."
+  ja: "arXiv・INSPIRE・NASA ADS・論文誌サイトで読んだ論文を、自分で選んだ一つのフォルダにまとめて管理するChrome拡張機能。"
+  zh: "一款Chrome扩展，将你在arXiv、INSPIRE、NASA ADS及期刊网站上阅读的论文统一保存在你选定的文件夹中。"
 
 footer.name:
   en: "Atsuhisa Ota"
