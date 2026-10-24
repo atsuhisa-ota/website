@@ -32,6 +32,7 @@ FONTS = {
     'zh': 'family=Fredoka:wght@400;500;600&family=Nunito:wght@400;600;700&family=Noto+Sans+SC:wght@400;500;700',
 }
 MONTHS = 'Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec'.split()
+BUILD_DATE = dt.date.today()   # shown as the last-updated date
 
 # Entries that are not listed on the website.
 HIDDEN_FUNDING = {'7c8351dc9414bc5b'}
@@ -286,6 +287,7 @@ class Builder:
             'positions': self.positions, 'memberships': self.memberships, 'grants': self.grants,
             'teaching': self.teaching, 'talks': self.talks_block, 'highlights': self.highlights, 'langmenu': self.langmenu,
             'alternates': self.alternates, 'fonts': self.fonts, 'js_strings': self.js_strings,
+            'updated': lambda: fmt_day(BUILD_DATE, self.lang), 'updated_iso': BUILD_DATE.isoformat,
         }
         page = re.sub(r'\{\{b:(\w+)\}\}', lambda m: blocks[m.group(1)](), template)
         page = re.sub(r'\{\{t:([\w.]+)\}\}', lambda m: self.t(m.group(1)), page)

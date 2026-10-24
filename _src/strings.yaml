@@ -346,6 +346,10 @@ footer.pubdata:
   en: "Publication data from <a href=\"https://inspirehep.net\" target=\"_blank\" rel=\"noopener\">INSPIRE-HEP</a>"
   ja: "論文データ：<a href=\"https://inspirehep.net\" target=\"_blank\" rel=\"noopener\">INSPIRE-HEP</a>"
   zh: "论文数据来源：<a href=\"https://inspirehep.net\" target=\"_blank\" rel=\"noopener\">INSPIRE-HEP</a>"
+footer.updated:
+  en: "Last updated: "
+  ja: "最終更新："
+  zh: "最后更新："
 footer.ai:
   en: "This website was made with generative AI (Claude)."
   ja: "このサイトは生成AI（Claude）を使って作成しました。"
