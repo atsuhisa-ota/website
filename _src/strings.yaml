@@ -164,9 +164,9 @@ recruit.title:
   ja: "学生募集"
   zh: "招生信息"
 recruit.lead:
-  en: "I am currently accepting master's students."
-  ja: "修士課程の大学院生を受け入れています。"
-  zh: "目前正在招收硕士研究生。"
+  en: "I am currently accepting domestic master's students."
+  ja: "中国国内の修士課程の大学院生を受け入れています。"
+  zh: "目前正在招收国内硕士研究生。"
 recruit.p1:
   en: "I'm looking for students who can work hard with positive energy."
   ja: "ポジティブなエネルギーで頑張れる学生に来てほしいです。"
