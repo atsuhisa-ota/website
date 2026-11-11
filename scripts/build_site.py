@@ -32,6 +32,7 @@ FONTS = {
     'zh': 'family=Fredoka:wght@400;500;600&family=Nunito:wght@400;600;700&family=Noto+Sans+SC:wght@400;500;700',
 }
 MONTHS = 'Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec'.split()
+SITE_URL = 'https://atsuhisa-ota.github.io/website/'
 BUILD_DATE = dt.date.today()   # shown as the last-updated date
 
 # Entries that are not listed on the website.
@@ -270,10 +271,38 @@ class Builder:
                 f'<ul>{"".join(items)}</ul></details>')
 
     def alternates(self):
-        root = LANGS[self.lang][2]
-        links = [f'    <link rel="alternate" hreflang="{hl}" href="{(root or "./") if code == "en" else root + code + "/"}">'
-                 for code, (hl, *_rest) in LANGS.items()]
+        # Absolute URLs: search engines ignore relative hreflang links
+        def url(code):
+            return SITE_URL + ('' if code == 'en' else code + '/')
+        links = [f'    <link rel="canonical" href="{url(self.lang)}">']
+        links += [f'    <link rel="alternate" hreflang="{hl}" href="{url(code)}">'
+                  for code, (hl, *_rest) in LANGS.items()]
+        links.append(f'    <link rel="alternate" hreflang="x-default" href="{url("en")}">')
         return '\n'.join(links)
+
+    def jsonld(self):
+        """Structured data for search engines: names in all scripts, affiliation and profiles."""
+        names = {'en': 'Atsuhisa Ota', 'ja': '太田 敦久', 'zh': '太田敦久'}
+        data = {
+            '@context': 'https://schema.org',
+            '@type': 'Person',
+            'name': names[self.lang],
+            'alternateName': [n for n in ('Atsuhisa Ota', '太田敦久', '太田 敦久') if n != names[self.lang]],
+            'jobTitle': self.t('hero.role'),
+            'affiliation': {'@type': 'CollegeOrUniversity', 'name': 'Chongqing University',
+                            'department': {'@type': 'Organization', 'name': 'School of Physics'}},
+            'url': SITE_URL + ('' if self.lang == 'en' else self.lang + '/'),
+            'knowsAbout': ['Theoretical physics', 'Cosmology', 'Gravitational waves', 'Effective field theory'],
+            'sameAs': [
+                'https://orcid.org/0000-0002-4509-3293',
+                'https://scholar.google.com/citations?user=MXz_RUYAAAAJ',
+                'https://inspirehep.net/authors/1337743',
+                'https://researchmap.jp/atsuhisa_ota',
+                'https://github.com/atsuhisa-ota',
+            ],
+        }
+        return ('    <script type="application/ld+json">'
+                + json.dumps(data, ensure_ascii=False) + '</script>')
 
     def fonts(self):
         return (f'    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?{FONTS[self.lang]}&display=swap">')
@@ -286,7 +315,7 @@ class Builder:
         blocks = {
             'positions': self.positions, 'memberships': self.memberships, 'grants': self.grants,
             'teaching': self.teaching, 'talks': self.talks_block, 'highlights': self.highlights, 'langmenu': self.langmenu,
-            'alternates': self.alternates, 'fonts': self.fonts, 'js_strings': self.js_strings,
+            'alternates': self.alternates, 'jsonld': self.jsonld, 'fonts': self.fonts, 'js_strings': self.js_strings,
             'updated': lambda: fmt_day(BUILD_DATE, self.lang), 'updated_iso': BUILD_DATE.isoformat,
         }
         page = re.sub(r'\{\{b:(\w+)\}\}', lambda m: blocks[m.group(1)](), template)
