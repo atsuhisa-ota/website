@@ -32,6 +32,7 @@ FONTS = {
     'zh': 'family=Fredoka:wght@400;500;600&family=Nunito:wght@400;600;700&family=Noto+Sans+SC:wght@400;500;700',
 }
 MONTHS = 'Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec'.split()
+SITE_URL = 'https://atsuhisa-ota.github.io/website/'
 BUILD_DATE = dt.date.today()   # shown as the last-updated date
 
 # Entries that are not listed on the website.
@@ -270,9 +271,13 @@ class Builder:
                 f'<ul>{"".join(items)}</ul></details>')
 
     def alternates(self):
-        root = LANGS[self.lang][2]
-        links = [f'    <link rel="alternate" hreflang="{hl}" href="{(root or "./") if code == "en" else root + code + "/"}">'
-                 for code, (hl, *_rest) in LANGS.items()]
+        # Absolute URLs: search engines ignore relative hreflang links
+        def url(code):
+            return SITE_URL + ('' if code == 'en' else code + '/')
+        links = [f'    <link rel="canonical" href="{url(self.lang)}">']
+        links += [f'    <link rel="alternate" hreflang="{hl}" href="{url(code)}">'
+                  for code, (hl, *_rest) in LANGS.items()]
+        links.append(f'    <link rel="alternate" hreflang="x-default" href="{url("en")}">')
         return '\n'.join(links)
 
     def fonts(self):
